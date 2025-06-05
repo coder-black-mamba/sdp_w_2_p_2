@@ -97,8 +97,18 @@ async function showItemDetails(meal_id){
                         <li>${data.meals[0].strIngredient19 || 'N/A'} : ${data.meals[0].strMeasure19 || 'N/A'}</li>
                         <li>${data.meals[0].strIngredient20 || 'N/A'} : ${data.meals[0].strMeasure20 || 'N/A'}</li>
                     </ul>
-                    <a href="${data.meals[0].strSource}" class=" d-block w-100 my-2">See source</a>
+                    <div class="my-4">
+                    <iframe
+                        width="100%"
+                        height="400"
+                        src="https://www.youtube.com/embed/${data.meals[0].strYoutube.split("v=")[1]}"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
                     </div>
+                    <a href="${data.meals[0].strSource}" class=" d-block w-100 my-2">See source</a>
                 </div>
                 </div>
             <!-- item details ends -->
