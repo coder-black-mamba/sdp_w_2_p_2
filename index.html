@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Search</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 bg-light m-2 rounded p-3">
+          <div class="jumbotron">
+            <h1 class="text-center"><span class="bg-warning p-2 m-2">Khudalagche ? :) !</span></h1>
+            <form class="form">
+              <div class="form-group">
+                <input type="text" class="form-control" id="search" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-warning d-block w-100 my-2">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="row" id="result-container">
+        <!-- single item card starts-->
+        <div class="col-md-4">
+          <div class="card m-2 p-2">
+            <img class="card-img-top rounded" src="https://www.themealdb.com/images/media/meals/c9a3l31593261890.jpg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title py-2">Card title</h4>
+              <p class="card-text text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-outline-warning d-block w-100 my-2">See Details </a>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- single item card ends-->
+
+      <!-- not found -->
+      <div class="col-md-12" id="not-found">
+        <div class="bg-danger text-white p-3 rounded">
+          <h2 class="text-center">Could Not Found Any Item !</h2>
+          <p class="text-center">Please Try Again !</p>
+          <p class="text-center">ভ্রুম ভ্রুম ভ্রুম 😛😛😛</p>
+        </div>
+      </div>
+      <!-- not found ends -->
+
+      <!-- loading -->
+      <div class="col-md-12" id="loading">
+        <div class="bg-warning text-white p-3 rounded">
+          <h2 class="text-center">Loading...</h2>
+          <p class="text-center">Please Wait !</p>
+          <p class="text-center">ভ্রুম ভ্রুম ভ্রুম 😛😛😛</p>
+        </div>
+      </div>
+      <!-- loading ends -->
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
